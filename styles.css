@@ -65,6 +65,12 @@ img, button {
 	border-radius: 100%;
 }
 
+input {
+	width: 200px !important;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
 	#top-logo {
 		width: 60%;

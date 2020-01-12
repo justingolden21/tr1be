@@ -1,6 +1,4 @@
-//todo
-
-$(function() {
+$( ()=> {
 
 	// $('#we-are').hide().fadeIn(2000);
 
@@ -9,15 +7,12 @@ $(function() {
 
 	$('#we-are').css('opacity', 0).animate({
 		opacity: 1,
-
 	}, 1500, ()=> {
 		$('#top-logo').animate({
 			opacity: 1,
-
 		}, 1500, ()=> {
 			$('#slogan').animate({
 				opacity: 1,
-
 			}, 1500);
 		});
 	});
@@ -27,8 +22,5 @@ $(function() {
 		navigation: true,
 		navigationTooltips: ['Home', 'Mission', 'Events', 'Hosting', 'Team', 'Contact'],
 	});
-
-
-
 
 });
