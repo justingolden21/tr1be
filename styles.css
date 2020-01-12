@@ -7,13 +7,6 @@ black: #000000
 white: #ffffff
 */
 
-/*.container {
-	margin: 0 auto !important;
-}*/
-
-
-
-
 #we-are {
 	display: inline;
 	font-size: 4em;
@@ -21,16 +14,6 @@ white: #ffffff
 #slogan {
 
 }
-
-#we-are, #top-logo, #slogan {
-	transition: all 0.5 ease-in-out;
-}
-
-
-
-
-
-
 
 .section p {
 	font-size: 2em;
@@ -44,11 +27,10 @@ white: #ffffff
 	margin-bottom: 20px;
 }
 
-
-
-
-
-
+.fp-controlArrow {
+	margin-right: 40px;
+	margin-left: 40px;
+}
 
 
 img, button {
@@ -58,14 +40,12 @@ img, button {
 	user-select: none; /* Standard */
 }
 ::-moz-selection {
-	background: hsl(0, 0%, 90%) !important;
+	background: #cab209;
+	color: #fff;
 }
 ::selection {
-	background: hsl(0, 0%, 90%) !important;
-}
-
-hr {
-	border: 2px solid #000;
+	background: #cab209;
+	color: #fff;
 }
 
 #top-logo {
@@ -86,30 +66,6 @@ hr {
 	cursor: pointer;
 	background-color: #fff;
 	box-shadow: 6px 6px 0px #000;
-}
-
-input[type=email], input[type=text], input[type=number] {
-	border: 4px solid #000;
-}
-input[type=email]:focus, input[type=text]:focus, input[type=number]:focus {
-	outline: none !important;
-	border-color: #ad960e;
-}
-button {
-	background-color: #000;
-	color: #fff;
-	border-radius: 0px !important;
-}
-button:hover, button:focus {
-	outline: none !important;
-	background-color: #ad960e;
-}
-form{
-	margin: 20px;
-}
-
-#email-input {
-	margin-right: 20px;
 }
 
 @media (max-width: 768px) {

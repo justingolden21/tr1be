@@ -23,9 +23,9 @@ $(function() {
 	});
 
 	new fullpage('#fullpage', {
-		sectionsColor: ['#ecd317', '#cab209', '#ad960e', '#ecd317', '#cab209'],
+		sectionsColor: ['#ecd317', '#cab209', '#ad960e', '#ecd317', '#cab209', '#ad960e'],
 		navigation: true,
-		navigationTooltips: ['Home', 'Mission', 'Events', 'Team', 'Contact'],
+		navigationTooltips: ['Home', 'Mission', 'Events', 'Hosting', 'Team', 'Contact'],
 	});
 
 
