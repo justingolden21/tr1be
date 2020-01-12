@@ -7,68 +7,68 @@ black: #000000
 white: #ffffff
 */
 
-/*.container {
-	margin: 0 auto !important;
-}*/
-img, button {
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
+#we-are {
+	display: inline;
+	font-size: 4em;
 }
-::-moz-selection {
-	background: hsl(0, 0%, 90%) !important;
-}
-::selection {
-	background: hsl(0, 0%, 90%) !important;
+#slogan {
+
 }
 
-hr {
-	border: 2px solid #000;
+.section p {
+	font-size: 2em;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.section h3 {
+	font-size: 3em;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.fp-controlArrow {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+
+img, button {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+::-moz-selection {
+	background: #cab209;
+	color: #fff;
+}
+::selection {
+	background: #cab209;
+	color: #fff;
 }
 
 #top-logo {
 	width: 600px;
 }
 .event-img {
-	border: 4px solid #000;
 	margin: 10px;
+	background-color: #fff;
+	box-shadow: 6px 6px 0px #000;
 }
 .team-img {
 	width: 128px;
 	margin: 20px;
-	border: 4px solid #000;
 	border-radius: 100%;
 }
 
-.event-img:hover, .team-img:hover {
-	cursor: pointer;
-	background-color: #ecd317;
-	box-shadow: 6px 6px 0px #000;
-}
-
-input[type=email], input[type=text], input[type=number] {
-	border: 4px solid #000;
-}
-input[type=email]:focus, input[type=text]:focus, input[type=number]:focus {
-	outline: none !important;
-	border-color: #ad960e;
-}
-button {
-	background-color: #000;
-	color: #fff;
-	border-radius: 0px !important;
-}
-button:hover, button:focus {
-	outline: none !important;
-	background-color: #ad960e;
-}
-form{
-	margin: 20px;
-}
-
-#email-input {
-	margin-right: 20px;
+input {
+	width: 200px !important;
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
