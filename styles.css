@@ -51,6 +51,11 @@ img, button {
 	color: #fff;
 }
 
+#section-1 {
+	background: rgb(236,211,23);
+	background: linear-gradient(135deg, rgba(236,211,23,1) 0%, rgba(202,178,9,1) 35%, rgba(173,150,14,1) 100%);
+}
+
 #top-logo {
 	width: 600px;
 }
