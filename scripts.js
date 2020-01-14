@@ -3,11 +3,15 @@ $( ()=> {
 	// $('#we-are').hide().fadeIn(2000);
 
 	$('#top-logo').css('opacity', 0);
+	$('#top-logo-coin').css('opacity', 0);
 	$('#slogan').css('opacity', 0);
 
 	$('#we-are').css('opacity', 0).animate({
 		opacity: 1,
 	}, 1500, ()=> {
+		$('#top-logo-coin').animate({
+			opacity: 1,
+		}, 1500);
 		$('#top-logo').animate({
 			opacity: 1,
 		}, 1500, ()=> {
