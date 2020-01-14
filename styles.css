@@ -54,10 +54,46 @@ img, button {
 #section-1 {
 	background: rgb(236,211,23);
 	background: linear-gradient(135deg, rgba(236,211,23,1) 0%, rgba(202,178,9,1) 35%, rgba(173,150,14,1) 100%);
+
+}
+#top-logo, #top-logo-coin {
+	top: 0;
+	display: block;
+	margin: auto;
+}
+#top-logo-coin {
+	margin-top: -592px;
+	animation: float 2s ease-in-out infinite;
+	/*animation: weirdspin 3s infinite;*/
 }
 
+@keyframes weirdspin {
+	0% {
+		transform: rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		transform: rotate3d(0, 1, 1, 180deg);
+	}
+	100% {
+		transform: rotate3d(0, 1, 0, 360deg);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
 #top-logo {
-	width: 600px;
+	/*width: 600px;*/
 }
 .event-img {
 	margin: 10px;
@@ -78,8 +114,15 @@ input {
 
 @media (max-width: 768px) {
 	#top-logo {
-		width: 60%;
+		/*width: 60%;*/
 	}
+	#top-logo, #top-logo-coin {
+		height: 300px;
+	}
+	#top-logo-coin {
+		margin-top: -300px;
+	}
+
 	.team-img {
 		width: 96px;
 		margin: 10px;
