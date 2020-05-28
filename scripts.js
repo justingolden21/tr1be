@@ -1,30 +1,46 @@
 $( ()=> {
 
-	// $('#we-are').hide().fadeIn(2000);
-
 	$('#top-logo').css('opacity', 0);
+	$('#tribe').css('opacity', 0);
 	$('#top-logo-coin').css('opacity', 0);
 	$('#slogan').css('opacity', 0);
+	$('#top-text').css('opacity', 0);
+	$('#top-btns').css('opacity', 0);
 
 	$('#we-are').css('opacity', 0).animate({
 		opacity: 1,
-	}, 1500, ()=> {
+	}, 1000, ()=> {
+		$('#tribe').animate({
+			opacity: 1,
+		}, 1000);
 		$('#top-logo-coin').animate({
 			opacity: 1,
-		}, 1500);
+		}, 1000);
 		$('#top-logo').animate({
 			opacity: 1,
-		}, 1500, ()=> {
+		}, 1000, ()=> {
 			$('#slogan').animate({
 				opacity: 1,
-			}, 1500);
+			}, 1000, ()=> {
+				$('#top-text').animate({
+					opacity: 1,
+				}, 1000);
+				$('#top-btns').animate({
+					opacity: 1,
+				}, 1000);
+			});
 		});
 	});
 
 	new fullpage('#fullpage', {
-		sectionsColor: ['#ecd317', '#cab209', '#ad960e', '#ecd317', '#cab209', '#ad960e'],
 		navigation: true,
-		navigationTooltips: ['Home', 'Mission', 'Events', 'Hosting', 'Team', 'Contact'],
+		navigationTooltips: ['Home', 'DKP', 'Sheets', 'Contact'],
+		anchors: ['home', 'dkp', 'sheets', 'contact'],
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		onLeave: (origin, destination, direction) => {
+			$('a').removeClass('active');
+			$(`a[href="#${destination.anchor}"]`).addClass('active');
+		}
 	});
 
 });

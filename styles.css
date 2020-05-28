@@ -7,33 +7,8 @@ black: #000000
 white: #ffffff
 */
 
-#we-are {
-	display: inline;
-	font-size: 4em;
-}
-#slogan {
-
-}
-
-.section p {
-	font-size: 2em;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-.section h3 {
-	font-size: 3em;
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-bottom: 20px;
-}
-
-.fp-controlArrow {
-	margin-right: 40px;
-	margin-left: 40px;
-}
-
-
-img, button {
+/* reset */
+img, button, a {
 	user-drag: none; 
 	user-select: none;
 	-moz-user-select: none;
@@ -51,32 +26,49 @@ img, button {
 	color: #fff;
 }
 
-#section-1 {
-	background: rgb(236,211,23);
-	background: linear-gradient(135deg, rgba(236,211,23,1) 0%, rgba(202,178,9,1) 35%, rgba(173,150,14,1) 100%);
+/* basics */
+header {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+}
 
+a {
+	cursor: pointer;
+}
+a.active {
+	transition: 0.25s linear color;
+	color: #ecd317;
+	/*font-weight: bold;*/
+}
+
+.section {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	font-family: Roboto, Helvetica, Arial;
+}
+
+/* dots */
+#fp-nav ul li a span {
+	background: #fff;
+}
+
+/* front page */
+#we-are {
+	margin-top: 2rem;
+}
+#top-text {
+	text-align: left;
 }
 #top-logo, #top-logo-coin {
-	top: 0;
 	display: block;
 	margin: auto;
+	width: 370px;
+	height: 296px;
 }
 #top-logo-coin {
-	margin-top: -592px;
+	margin-top: -296px;
 	animation: float 2s ease-in-out infinite;
-	/*animation: weirdspin 3s infinite;*/
-}
-
-@keyframes weirdspin {
-	0% {
-		transform: rotate3d(0, 1, 0, 0deg);
-	}
-	50% {
-		transform: rotate3d(0, 1, 1, 180deg);
-	}
-	100% {
-		transform: rotate3d(0, 1, 0, 360deg);
-	}
 }
 
 @keyframes float {
@@ -91,40 +83,19 @@ img, button {
 	}
 }
 
-
-#top-logo {
-	/*width: 600px;*/
-}
-.event-img {
-	margin: 10px;
-	background-color: #fff;
-	box-shadow: 6px 6px 0px #000;
-}
-.team-img {
-	width: 128px;
-	margin: 20px;
-	border-radius: 100%;
-}
-
-input {
-	width: 200px !important;
-	margin: auto;
-	margin-bottom: 10px;
-}
-
 @media (max-width: 768px) {
-	#top-logo {
-		/*width: 60%;*/
+	#we-are {
+		margin-top: -2rem;
 	}
 	#top-logo, #top-logo-coin {
-		height: 300px;
+		width: 185px;
+		height: 148px;
+		margin-top: 8rem;
 	}
 	#top-logo-coin {
-		margin-top: -300px;
+		margin-top: -148px;
 	}
-
-	.team-img {
-		width: 96px;
-		margin: 10px;
+	h1:not(#we-are) {
+		margin-top: 4rem;
 	}
 }
