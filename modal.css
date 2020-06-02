@@ -1,0 +1,17 @@
+.modal {
+	transition: opacity 0.25s ease;
+}
+body.modal-active {
+	overflow-x: hidden;
+	overflow-y: visible !important;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+@media (max-width: 768px) {
+	.modal-content {
+		margin-top: 8rem;
+	}
+}

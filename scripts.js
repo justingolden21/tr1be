@@ -34,7 +34,7 @@ $( ()=> {
 
 	new fullpage('#fullpage', {
 		navigation: true,
-		navigationTooltips: ['Home', 'DKP', 'Sheets', 'Contact'],
+		navigationTooltips: ['Home', 'DKP', 'Sheets', 'Check us Out'],
 		anchors: ['home', 'dkp', 'sheets', 'contact'],
 		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 		onLeave: (origin, destination, direction) => {
@@ -42,5 +42,7 @@ $( ()=> {
 			$(`a[href="#${destination.anchor}"]`).addClass('active');
 		}
 	});
+
+	// https://blog.discord.com/add-the-discord-widget-to-your-site-d45ffcd718c6
 
 });
